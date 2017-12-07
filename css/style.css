@@ -1,0 +1,409 @@
+/** ==================================== **/
+/** ========== Basics section ========== **/
+/** ==================================== **/
+* {
+  font-family: 'Poppins', sans-serif, bold;
+}
+
+html, body, .container, .container-fluid {
+  width: 100%;
+  height: 100%;
+  /* Prevent horizontal overflow (horizontal scrollbar will appear otherwise) */
+  overflow-x: hidden;
+}
+
+/* Smoother hover links */
+a, button {
+  /* For other browsers */
+  -o-transition: 1s;
+  -ms-transition: 1s;
+  -moz-transition: 1s;
+  -webkit-transition: 1s;
+  /* ...and now for the proper property */
+  transition: 1s;
+}
+
+.nopadding {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+/** ===================================== **/
+/** ========== /Basics section ========== **/
+/** ===================================== **/
+
+
+/** ================================== **/
+/** ========== Home section ========== **/
+/** ================================== **/
+header {
+  overflow-y: hidden;
+}
+
+.home {
+  padding: 60px 0 60px 0;
+  /*min-height: 800px;*/
+  width: 100%;
+  /*height: 100%;*/
+  height: 100vh;
+  position: center;
+  background-image: url('../img/introbg1.gif');
+  background-repeat: no-repeat;
+  background-position: center center;
+  /* background-attachment: fixed; removed for Android */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /*rgb(40, 70, 102)*/
+  /*background-size: 100%;*/
+  color: #fff;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.home h1 {
+  font-family: 'Lemonada', cursive, bold;
+  color: #fff;
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 5px;
+  padding-bottom: 10px;
+  text-shadow: 0,5px 0.5px 0.5px rgba(0,0,0, 0.5); 
+/*  background: linear-gradient(#fff,#ededed) no-repeat;
+  background-size: 50% 0.03em;
+  background-position: center bottom;*/
+}
+
+/* Start resizing home text on smaller screens */
+.home h1 {
+  font-size: 80px;
+}
+
+/************************************************************************************
+smaller than 980
+*************************************************************************************/
+@media screen and (max-width: 980px) {
+  .home h1 {
+    font-size: 70px;
+  }
+}
+
+/************************************************************************************
+smaller than 650
+*************************************************************************************/
+@media screen and (max-width: 650px) {
+  .home h1 {
+    font-size: 65px;
+  }
+}
+/************************************************************************************
+smaller than 560
+*************************************************************************************/
+@media screen and (max-width: 480px) {
+  .home h1 {
+    font-size: 60px;
+  }
+}
+
+#parenthome {
+  position: relative;
+}
+
+#home-text {
+/*  position: relative;*/
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+/*  padding-top: 10%;*/
+  height: 100%;
+  /*word-wrap:break-word;*/
+/*  padding-top: 175px;
+  padding-bottom: 200px;*/
+/*  display: inline-block;*/
+  max-width: 100%;
+/*  margin: 0 auto;*/
+  animation: fadein 2.5s;
+    -moz-animation: fadein 2.5s; /* Firefox */
+    -webkit-animation: fadein 2.5s; /* Safari and Chrome */
+    -o-animation: fadein 2.5s; /* Opera */
+}
+
+/** ===== Home text fade in support ===== **/
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/** ===== End Home text fade in support ===== **/
+
+.home p {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  /*display: inline;*/
+  /*text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);*/
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-weight: 450;
+  margin-top: 5px;
+  /*margin-bottom: 40px;*/
+}
+
+/* Start resizing home text on smaller screens */
+.home p {
+  font-size: 30px;
+}
+
+/************************************************************************************
+smaller than 980
+*************************************************************************************/
+@media screen and (max-width: 980px) {
+  .home p {
+    font-size: 25px;
+  }
+}
+
+/************************************************************************************
+smaller than 650
+*************************************************************************************/
+@media screen and (max-width: 650px) {
+  .home p {
+    font-size: 22px;
+  }
+}
+/************************************************************************************
+smaller than 560
+*************************************************************************************/
+@media screen and (max-width: 480px) {
+  .home p {
+    font-size: 20px;
+  }
+}
+
+.home a {
+  color: #fff;
+}
+
+#scrolldownarrow {
+  width: 45px;
+  height: 45px;
+  position:absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: 0px;
+}
+
+/* Override arrow animation to make it last longer */
+.uk-animation-slide-top {
+  animation-duration: 1.5s;
+}
+/** =================================== **/
+/** ========== /Home section ========== **/
+/** =================================== **/
+
+
+/** ================================= **/
+/** ========== Nav section ========== **/
+/** ================================= **/
+section.nav {
+  padding: 60px 0;
+  background-color: #f6f7f9;
+}
+
+.btn-nav {
+  white-space: normal !important;
+  word-wrap: break-word;
+  margin: 0 auto;
+}
+
+.btn-nav {
+    display: inline-block;
+    padding: 7% 20%;
+    border: 2px solid #4e9ba3;
+    border-radius: 3px;
+    color: #4e9ba3;
+    font-size: 18px;
+    background-color: transparent;
+}
+
+.btn-nav:hover, .btn-nav:focus {
+    border-color: #73d0da;
+    color: #73d0da;
+    text-decoration: none;
+    background-color: transparent;
+}
+/** ================================== **/
+/** ========== /Nav section ========== **/
+/** ================================== **/
+
+/** ==================================== **/
+/** ========== About me section ========== **/
+/** ==================================== **/
+section.about {
+  background-color: #3f6184;
+}
+
+.aboutme-bg {
+  position: relative;
+  background: url('../img/aboutmebg.gif');
+  background-repeat: no-repeat; 
+  background-position: center center;
+  /* background-attachment: fixed; removed for Android */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /*background-size: 100%;*/
+  height: 100% !important;
+}
+
+.aboutme-img {
+    min-width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 400px;
+}
+
+#personimg {
+  width: 200px;
+  height: 200px;
+}
+
+.aboutme {
+  position: relative;
+  padding: 4% 15% 4% 15%;
+  height: 100%;
+  /*height: 400px;*/
+  /* Compensate for small screens not seeing all text */
+  /*overflow-y: scroll;*/
+}
+
+.aboutme h1 {
+  font-size: 30px;
+}
+
+.aboutme h1,p,li {
+  color: #fff;
+  font-family: 'Nunito';
+}
+
+.aboutme a {
+  font-family: 'Nunito';
+  color: #73d0da;
+  text-decoration: none;
+}
+
+.aboutme a:hover {
+  text-decoration: none;
+  color: #529e9e;
+}
+
+.aboutme li {
+  text-decoration: none;
+}
+/** ===================================== **/
+/** ========== /About me section ========== **/
+/** ===================================== **/
+
+/** ==================================== **/
+/** ========== Work section ========== **/
+/** ==================================== **/
+.mywork {
+  position: relative;
+  padding: 2% 10% 4% 10%;
+}
+
+.mywork h1 {
+  text-align: center;
+  color: #24374b;
+  font-family: 'Nunito';
+  margin-top: 0;
+}
+
+.subtext {
+  text-align: center;
+  color: #777;
+}
+
+.projecttile {
+  background-color: blue;
+}
+
+/* Start resizing caption on smaller screens */
+.projectcaption {
+  font-size: 24px;
+}
+
+/************************************************************************************
+smaller than 980
+*************************************************************************************/
+@media screen and (max-width: 980px) {
+  .projectcaption {
+    font-size: 20px;
+  }
+}
+
+/************************************************************************************
+smaller than 650
+*************************************************************************************/
+@media screen and (max-width: 650px) {
+  .projectcaption {
+    font-size: 18px;
+  }
+}
+/************************************************************************************
+smaller than 560
+*************************************************************************************/
+@media screen and (max-width: 480px) {
+  .projectcaption {
+    font-size: 18px;
+  }
+}
+
+.projectdescription {
+  color: #333;
+}
+
+/** ===================================== **/
+/** ========== /Work section ========== **/
+/** ===================================== **/
+
+/** ==================================== **/
+/** ========== Footer section ========== **/
+/** ==================================== **/
+footer {
+  background-color: red;
+}
+/** ===================================== **/
+/** ========== /Footer section ========== **/
+/** ===================================== **/

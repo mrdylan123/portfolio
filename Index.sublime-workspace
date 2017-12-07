@@ -1,0 +1,245 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/game/Dropbox/PC&Laptop/ECA's/Website Charif.nl/Website/index.php",
+		"/C/Users/game/Dropbox/PC&Laptop/ECA's/Website Charif.nl/Website/includes/footer.html",
+		"/C/Users/game/AppData/Local/Temp/fz3temp-1/style.css",
+		"/C/Users/game/Dropbox/PC&Laptop/ECA's/Website Charif.nl/Website/includes/header.html",
+		"/C/Users/game/Dropbox/PC&Laptop/ECA's/Website Charif.nl/Website/includes/style.css",
+		"/C/Users/game/AppData/Local/Temp/fz3temp-1/style 2.css",
+		"/C/Users/game/Dropbox/PC&Laptop/Backups/Style includesmap.css",
+		"/C/Users/game/Dropbox/PC&Laptop/Backups/Style hoofdmap.css",
+		"/C/xampp/htdocs/phpoefentoets/verbindendatabase.php",
+		"/C/xampp/htdocs/webwinkelframework/login.php",
+		"/C/xampp/htdocs/webwinkelframework/logout.php",
+		"/C/xampp/htdocs/webwinkelframework/includes/mysqli_connect_localhost.php",
+		"/C/xampp/htdocs/phpoefentoets/test.php",
+		"/C/xampp/htdocs/phpoefentoets/strings.php",
+		"/C/xampp/htdocs/phpoefentoets/datumentijd2.php",
+		"/C/xampp/htdocs/phpoefentoets/Datumentijd.php",
+		"/C/xampp/htdocs/webwinkelframework/registreer.php",
+		"/C/xampp/htdocs/Registratie/Registratie.php",
+		"/C/xampp/htdocs/phpoefentoets/IF-ELSE Constructie.php",
+		"/C/xampp/htdocs/phpoefentoets/SWITCH Statement.php",
+		"/C/xampp/htdocs/phpoefentoets/Arrayenweergeven.php",
+		"/C/xampp/htdocs/phpoefentoets/Arrayenweergeven2.php",
+		"/C/xampp/htdocs/phpoefentoets/FORLus.php",
+		"/C/xampp/htdocs/phpoefentoets/WHILELus.php",
+		"/C/xampp/htdocs/phpoefentoets/DOWHILE.php",
+		"/C/xampp/htdocs/phpoefentoets/cirkeloppervlakte.php",
+		"/C/xampp/htdocs/phpoefentoets/inhoudkubus.php",
+		"/C/xampp/htdocs/webwinkelframework/index.php",
+		"/C/xampp/htdocs/webwinkelframework/update_cart.php",
+		"/C/xampp/htdocs/webwinkelframework/showfile.php",
+		"/C/xampp/htdocs/webwinkelframework/delete_cart_item.php",
+		"/C/xampp/htdocs/webwinkelframework/delete_cart.php",
+		"/C/xampp/htdocs/webwinkelframework/checkout.php",
+		"/C/xampp/htdocs/webwinkelframework/categorieB.php",
+		"/C/xampp/htdocs/webwinkelframework/categorieA.php",
+		"/C/xampp/htdocs/webwinkelframework/cart.php",
+		"/C/xampp/htdocs/webwinkelframework/bestellingenbeheer.php",
+		"/C/xampp/htdocs/webwinkelframework/beheer.php",
+		"/C/xampp/htdocs/webwinkelframework/add.php",
+		"/C/xampp/htdocs/webwinkelframework/account.php",
+		"/C/Users/game/Documents/School/html/Webdesign oefententamen/gitaar.html",
+		"/C/Users/game/Documents/School/html/Webdesign oefententamen/css/gitaar.css",
+		"/C/Users/game/Documents/School/html/Webdesign oefententamen/home.html",
+		"/C/Users/game/Documents/School/html/Webdesign oefententamen/css/home.css",
+		"/C/Users/game/Dropbox/23BIMIVP1E4 - periode 1/Webdesign/HTML/Gitaar.html",
+		"/C/Users/game/Dropbox/23BIMIVP1E4 - periode 1/Webdesign HTML/voorbeeld.html",
+		"/C/Users/game/Dropbox/23BIMIVP1E4 - periode 1/Webdesign/HTML/voorbeeld.html",
+		"/C/Users/game/Dropbox/23BIMIVP1E4 - periode 1/Webdesign/HTML/snaren.html",
+		"/C/Users/game/Dropbox/23BIMIVP1E4 - periode 1/Webdesign/HTML/formulier.html",
+		"/C/Users/game/Documents/School/html/Oefententamen.html",
+		"/C/Users/game/Documents/School/html/test2.html",
+		"/C/Users/game/Documents/School/html/css/test1.css",
+		"/C/Users/game/Documents/School/html/test1.html",
+		"/C/Users/game/Documents/School/html/stylesheet.css",
+		"/C/Users/game/Documents/School/html/html test.html",
+		"/C/Users/game/Documents/School/html/basic-bootstrap.html",
+		"/C/Users/game/Documents/School/html/css/bootstrap.css",
+		"/C/Users/game/Documents/School/html/css/custom.min.css",
+		"/C/Users/game/Downloads/bootstrap.zip",
+		"/C/Users/game/Documents/School/html/home prototype.html"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"footer",
+			"content",
+			"body",
+			"content",
+			"witvlak",
+			"form",
+			"li",
+			"content",
+			"input",
+			"header",
+			"h1",
+			"media",
+			"container",
+			"content",
+			"logo",
+			"content",
+			"logout",
+			"third",
+			"email",
+			"name",
+			"footer"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "Index.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
