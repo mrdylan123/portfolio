@@ -5,14 +5,14 @@
 	<title>Dylan Martens</title>
 	<meta charset="utf-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<meta name="description" content="">
+    <meta name="author" content="">
 <!--   	<link rel="icon" href="img/favicon/favicon.png"/>
   	<link rel="shortcut icon" href="img/favicon/favicon.png"/> -->
 
-	<!-- Bootstrap, FontAwesome, UIKit CSS Stylesheet -->
+	<!-- Bootstrap, FontAwesome CSS Stylesheet -->
 	<link rel="stylesheet" href="css/bootstrap.css" />
 	<link rel="stylesheet" href="css/fontawesome/css/font-awesome.min.css">
-	<!-- <link rel="stylesheet" href="res/css/uikit.min.css" /> -->
-    <!-- <script src="res/js/uikit.min.js"></script> -->
 
 	<!-- Import fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
@@ -24,11 +24,15 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 
 	<!-- Import js -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="js/smoothscrolling.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+   	<script src="js/scrolling-nav.js"></script>
+
+
 </head>
 
-<body>
+<body id="page-top">
 	<!-- Header section -->
 	<header>
 		<section class="home" id="home">
@@ -56,36 +60,16 @@
 		<div class="container">
 			<div class="row" style="width: 100%; text-align: center;">
 				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-					<a href="#about" class="btn btn-lg btn-nav">About me</a>
+					<a class="js-scroll-trigger btn btn-lg btn-nav" href="#about">About me</a>
 				</div>
 
 				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-					<a href="#work" class="btn btn-lg btn-nav">My work</a>
+					<a class="js-scroll-trigger btn btn-lg btn-nav" href="#work">My work</a>
 				</div>
 
 				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-					<a href="#contact" class="btn btn-lg btn-nav">Contact</a>
+					<a class="js-scroll-trigger btn btn-lg btn-nav" href="#contact">Contact</a>
 				</div>
-
-
-<!-- 				<div class="col-xs-12">
-					<div class="row">
-						<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 text-center">
-							<a href="#about"><button class="btn">About me</button></a>
-						</div>
-
-						<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 text-center">
-							<a href="#work"><button class="btn">My work</button></a>
-						</div>
-
-						<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 text-center">
-							<a href="#about"><button class="btn">Contact</button></a>
-						</div>
-
-						<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 text-center">
-							<a href="#about"><button class="btn">Location</button></a>
-						</div>
-				</div> -->
 			</div>
 		</div>	
 	</section>
