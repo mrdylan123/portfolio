@@ -301,7 +301,7 @@ section.about {
 
 .aboutme {
   position: relative;
-  padding: 2% 10% 2% 10%;
+  padding: 3% 10% 0% 10%;
   height: 100%;
   /*height: 400px;*/
   /* Compensate for small screens not seeing all text */
