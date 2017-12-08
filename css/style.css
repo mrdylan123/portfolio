@@ -422,6 +422,7 @@ footer {
     border-radius: 99px;
     background-color: rgba(63, 97, 132, 0.9);
     color: #fff;
+	padding: 6px 12px;
 }
 
 .back-to-top:hover, .back-to-top:focus {
