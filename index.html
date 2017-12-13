@@ -110,7 +110,7 @@
 					<p class="subtext">Some of my recent projects</p>
 
 					<div class="col-lg-4 col-md-6 projecttile">
-						<a class="projectbox" href="#">
+						<a class="projectbox" href="#" data-toggle="modal" data-target=".website1">
 							<img class="img-responsive" src="img/project_ptwebsite/index.png" alt="Personal training website">
 							<div class="project-caption">
 								<div class="project-caption-content">
@@ -126,7 +126,7 @@
 					</div>
 					
 					<div class="col-lg-4 col-md-6 projecttile">
-						<a class="projectbox" href="#">
+						<a class="projectbox" href="#" data-toggle="modal" data-target=".website2">
 							<img class="img-responsive" src="img/vs_logo.png" alt="Personal training website">
 							<div class="project-caption">
 								<div class="project-caption-content">
@@ -142,7 +142,7 @@
 					</div>
 
 					<div class="col-lg-4 col-md-6 projecttile">
-						<a class="projectbox" href="#" data-toggle="modal" data-target=".bs-example-modal-lg">
+						<a class="projectbox" href="#" data-toggle="modal" data-target=".androidModal">
 							<img class="img-responsive" src="img/project_android/android.png" alt="Personal training website">
 							<div class="project-caption">
 								<div class="project-caption-content">
@@ -179,34 +179,85 @@
 	<a id="back-to-top" href="#" class="js-scroll-trigger btn btn-lg back-to-top" role="button" title="Click to return to the top" data-toggle="tooltip" data-placement="left"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
 
 
+	<!-- Victoria PT Website modal -->
+	<div class="modal fade in website1" tabindex="-1" role="dialog" data-easein="slideDownIn" aria-labelledby="Modal PT Website">
+		<div class="modal-dialog modal-lg" role="document">
+	    	<div class="modal-content">
+		    	<div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+		      	</div>
 
-<div class="modal fade in bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-    	<div class="modal-header">
-	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-	        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-      	</div>
+		      	<div class="modal-body">
+		        	...
+		      	</div>
 
-      	<div class="modal-body">
-        	...
-      	</div>
+			    <div class="modal-footer">
+			    	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			        <button type="button" class="btn btn-primary">Save changes</button>
+			    </div>  	
 
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>  	
+	    	</div>
+	  	</div>
+	</div>
 
-    </div>
-  </div>
-</div>
+	<!-- Cinema Website modal -->
+	<div class="modal fade in website2" tabindex="-1" role="dialog" data-easein="slideDownIn" aria-labelledby="Cinema Website">
+		<div class="modal-dialog modal-lg" role="document">
+	    	<div class="modal-content">
+		    	<div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+		      	</div>
+
+		      	<div class="modal-body">
+		        	...
+		      	</div>
+
+			    <div class="modal-footer">
+			    	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			        <button type="button" class="btn btn-primary">Save changes</button>
+			    </div>  	
+
+	    	</div>
+	  	</div>
+	</div>
+
+
+
+	<!-- Android App modal -->
+	<div class="modal fade in androidModal" tabindex="-1" role="dialog" data-easein="slideDownIn" aria-labelledby="Modal Android App">
+		<div class="modal-dialog modal-lg" role="document">
+	    	<div class="modal-content">
+		    	<div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+		      	</div>
+
+		      	<div class="modal-body">
+		        	...
+		      	</div>
+
+			    <div class="modal-footer">
+			    	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			        <button type="button" class="btn btn-primary">Save changes</button>
+			    </div>  	
+
+	    	</div>
+	  	</div>
+	</div>
+
 
 
 	<!-- Import js -->
-	<script src="vendor/jquery/jquery.min.js"></script>
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.ui.min.js'></script>
    	<script src="js/scrolling-nav.js"></script>
    	<script src="js/backtotopbutton.js"></script>
+   	<script  src="js/modals.js"></script>
+
 </body>
 </html>
