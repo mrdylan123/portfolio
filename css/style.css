@@ -27,6 +27,21 @@ a, button {
   margin: 0 15px !important;
   padding: 0 !important;
 }
+
+/* This only works with JavaScript, 
+if it's not present, don't show loader */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.loadingdiv {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url('../img/preloader.gif') center no-repeat #fff;
+}
+
 /** ===================================== **/
 /** ========== /Basics section ========== **/
 /** ===================================== **/
@@ -358,7 +373,7 @@ section.about {
 }
 
 .projecttile {
-  margin-bottom: 20px;
+  margin: 20px 0 20px 0;
 }
 
 
