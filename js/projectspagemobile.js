@@ -9,9 +9,10 @@
 
     if (isMobile) {
     	window.onscroll = function() {
-    		(isScrolledIntoView(tile1)) ? $(".caption1").css("opacity", 1) : $(".caption1").css("opacity",0);
-    		(isScrolledIntoView(tile2)) ? $(".caption2").css("opacity", 1) : $(".caption2").css("opacity",0);
-			(isScrolledIntoView(tile3)) ? $(".caption3").css("opacity", 1) : $(".caption3").css("opacity",0)
+    		(isScrolledIntoView(tile1)) ? $('#caption1').addClass("project-mobile") : $("#caption1").removeClass("project-mobile");
+    		(isScrolledIntoView(tile2)) ? $("#caption2").addClass("project-mobile") : $("#caption2").removeClass("project-mobile");
+			(isScrolledIntoView(tile3)) ? $("#caption3").addClass("project-mobile") : $("#caption3").removeClass("project-mobile")
+
     	};
     }
     	function isScrolledIntoView(el) {

@@ -423,7 +423,7 @@ section.about {
 }
 
 .projectbox .project-caption .project-caption-content .project-name hr {
-  height: 30px;
+  height: 20px;
   width: 0;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -433,11 +433,11 @@ section.about {
   border: 0;
 }
 
-.projectbox:hover .project-caption {
+.projectbox:hover .project-caption, .projectbox .project-mobile {
   opacity: 1; 
 }
 
-.projectbox:hover .project-caption .project-caption-content .project-name hr {
+.projectbox:hover .project-caption .project-caption-content .project-name hr, .projectbox .project-mobile .project-caption-content .project-name hr {
   width: 100%;
   height: 5px;
 }
