@@ -419,7 +419,7 @@ section.about {
 }
 
 .projectbox .project-caption .project-caption-content .project-name {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .projectbox .project-caption .project-caption-content .project-name hr {
@@ -445,6 +445,10 @@ section.about {
 .projectbox:focus {
   outline: none; 
 }
+
+.projectbox .projectcaption .fa .fa-circle {
+  color: #333 !important;
+} 
 
 /* Resize text on bigger screens */
 @media (min-width: 768px) {
