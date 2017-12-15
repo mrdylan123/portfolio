@@ -394,9 +394,9 @@ section.about {
   opacity: 0;
   color: #fff;
   background: rgba(63, 97, 132, 0.9);
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  transition: all 0.5s; 
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease; 
 }
 
 .projectbox .project-caption .project-caption-content {
@@ -422,8 +422,24 @@ section.about {
   font-size: 18px;
 }
 
+.projectbox .project-caption .project-caption-content .project-name hr {
+  height: 30px;
+  width: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background-color: rgba(255, 255, 255, 1);
+  border: 0;
+}
+
 .projectbox:hover .project-caption {
   opacity: 1; 
+}
+
+.projectbox:hover .project-caption .project-caption-content .project-name hr {
+  width: 100%;
+  height: 5px;
 }
 
 .projectbox:focus {
