@@ -415,6 +415,7 @@ section.about {
 .projectbox .project-caption .project-caption-content .project-text-muted {
   font-size: 14px;
   font-weight: 600;
+  letter-spacing: 1px;
   text-transform: uppercase;
 }
 
@@ -446,9 +447,23 @@ section.about {
   outline: none; 
 }
 
-.projectbox .projectcaption .fa .fa-circle {
-  color: #333 !important;
-} 
+.project-link {
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.project-link:hover, .projectbox .project-mobile .project-caption-content .project-icons .project-link {
+  color: #77b9ff;
+}
+
+.fa-work {
+  text-shadow: 0px 0px 5px #000;
+  font-size: 2.5em;
+}
 
 /* Resize text on bigger screens */
 @media (min-width: 768px) {
@@ -461,6 +476,8 @@ section.about {
 /** ==================================== **/
 /** ========== /Work section ========== **/
 /** ================================== **/
+
+
 
 /** ==================================== **/
 /** ========== Footer section ========== **/
