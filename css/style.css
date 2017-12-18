@@ -489,6 +489,15 @@ section.contact {
   background-color: #3f6184;
 }
 
+.contact h1,p{
+  font-family: 'Nunito', sans-serif;
+  color: #fff;
+}
+
+.contact h1 {
+  text-align: center;
+}
+
 .mapdiv {
   padding: 0;
 }
@@ -500,6 +509,109 @@ section.contact {
 .contactcontent {
   padding: 15px;
 }
+
+.formheader {
+  margin-bottom: 20px;
+}
+
+.contactlabel {
+  font-size: 18px;
+}
+
+.connect {
+  width: 100%;
+}
+
+.social {
+  display: table-cell;
+  text-align: center;
+}
+
+form.contact {
+  border-top: solid thin #8e9699;
+  border-bottom: solid thin #8e9699;
+  margin: 20px 0;
+  padding: 20px 0;
+}
+
+.group {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+form input {
+  font-size: 13px;
+  height: 25px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 300px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #B1B1B1;
+  color: #B1B1B1;
+  background: rgba(0,0,0,0);
+  opacity: 0.5;
+  transition: 0.2s ease;
+}
+
+form input:focus {
+  outline: none;
+  opacity: 1;
+}
+
+.inputlabel {
+  color: #B1B1B1; 
+  font-size: 12px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 6px;
+  opacity: 0.5;
+  transition: 0.2s ease all; 
+  -moz-transition: 0.2s ease all; 
+  -webkit-transition: 0.2s ease all;
+}
+
+/* active state */
+input:focus ~ .inputlabel, input:valid ~ .inputlabel {
+  top: -14px;
+  font-size: 11px;
+  color: #B1B1B1;
+  opacity: 1;
+}
+
+.highlight {
+  position: absolute;
+  height: 60%; 
+  width: 100px; 
+  top: 25%; 
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* active state */
+form input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+  from { background:#B1B1B1; }
+  to  { width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+  from { background:#B1B1B1; }
+  to  { width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+  from { background:#B1B1B1; }
+  to  { width:0; background:transparent; }
+}
+
 
 
 /** ======================================= **/
