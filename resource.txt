@@ -1,3 +1,0 @@
-http://plugindetector.com/craftmap
-
-https://www.sitepoint.com/10-jquery-global-map-plugins/
