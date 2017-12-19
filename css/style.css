@@ -88,7 +88,7 @@ header {
   margin-top: 0;
   margin-bottom: 5px;
   padding-bottom: 10px;
-  text-shadow: 0,5px 0.5px 0.5px rgba(0,0,0, 0.5); 
+  text-shadow: 1px 1px 1px rgba(0,0,0, 0.5); 
 /*  background: linear-gradient(#fff,#ededed) no-repeat;
   background-size: 50% 0.03em;
   background-position: center bottom;*/
@@ -182,7 +182,7 @@ smaller than 560
   color: #fff;
   font-family: 'Nunito', sans-serif;
   /*display: inline;*/
-  /*text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);*/
+  text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
   position: relative;
   top: 50%;
   -ms-transform: translateY(-50%);
@@ -235,14 +235,22 @@ smaller than 560
   left: 0;
   right: 0;
   margin: 0 auto;
-  bottom: 0px;
+  bottom: 10px;
 /*  margin-bottom: 5px;
-*/}
-
-/* Override arrow animation to make it last longer */
-.uk-animation-slide-top {
-  animation-duration: 1.5s;
+*/
 }
+
+/************************************************************************************
+smaller than 650 arrow
+*************************************************************************************/
+@media screen and (max-width: 650px) {
+  #scrolldownarrow {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+
 /** =================================== **/
 /** ========== /Home section ========== **/
 /** =================================== **/
