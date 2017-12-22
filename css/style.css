@@ -596,12 +596,11 @@ form.contact {
 
 .group {
   position: relative;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
-form input {
+form input, form textarea {
   font-size: 13px;
-  height: 25px;
   padding: 10px 10px 10px 5px;
   display: block;
   width: 300px;
@@ -614,7 +613,11 @@ form input {
   transition: 0.2s ease;
 }
 
-form input:focus {
+form input {
+  height: 25px;
+}
+
+form input:focus, form textarea:focus {
   outline: none;
   opacity: 1;
 }
@@ -634,7 +637,7 @@ form input:focus {
 }
 
 /* active state */
-input:focus ~ .inputlabel, input:valid ~ .inputlabel {
+input:focus ~ .inputlabel, input:valid ~ .inputlabel, textarea:focus ~ .inputlabel, textarea:valid ~ .inputlabel {
   top: -14px;
   font-size: 11px;
   color: #B1B1B1;
@@ -652,7 +655,7 @@ input:focus ~ .inputlabel, input:valid ~ .inputlabel {
 }
 
 /* active state */
-form input:focus ~ .highlight {
+form input:focus ~ .highlight, form textarea:focus ~ .highlight {
   -webkit-animation:inputHighlighter 0.3s ease;
   -moz-animation:inputHighlighter 0.3s ease;
   animation:inputHighlighter 0.3s ease;
