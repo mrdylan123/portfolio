@@ -511,7 +511,7 @@ section.contact {
 }
 
 .map {
-  height: 500px;
+  height: 550px;
 }
 
 .contactcontent {
@@ -523,7 +523,7 @@ section.contact {
 }
 
 .contactlabel {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .connect {
@@ -590,8 +590,8 @@ section.contact {
 form.contact {
   border-top: solid thin #8e9699;
   border-bottom: solid thin #8e9699;
-  margin: 20px 0;
-  padding: 20px 0;
+  margin-top: 20px;
+  padding: 20px 0 30px;
 }
 
 .group {
@@ -675,7 +675,25 @@ form input:focus ~ .highlight, form textarea:focus ~ .highlight {
   to  { width:0; background:transparent; }
 }
 
+.contactbutton {
+  padding: 10px;
+  background-color: transparent;
+  color: #FAFAFA;
+  border-radius: 4px;
+  border: 1px solid #B1B1B1;
+  font-size: 13px;
+}
 
+.contactbutton:hover {
+  color: #007BB6;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.contacticon {
+  font-weight: 900;
+  vertical-align: middle;
+}
 
 /** ======================================= **/
 /** ========== /Contact section ========== **/
