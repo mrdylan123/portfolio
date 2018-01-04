@@ -334,7 +334,6 @@ section.about {
 
 .aboutme h1 {
   font-size: 30px;
-  margin-top: 0;
 }
 
 .aboutme h1,p,li {
@@ -722,7 +721,7 @@ footer {
 
 .flex-item {
     padding: 5px;
-    margin: 10px;
+    margin: 15px;
     line-height: 20px;
     text-align: center;
 }
@@ -731,29 +730,15 @@ footer {
   margin-top: 20px;
 }
 
-.flex-item > .connectlist {
+.flex-item > .connectlist li {
   float: none;
+  display: inline-block;
 }
 
 .flex-item > p {
   color: #333;
-  font-size: 1.1em;
+  font-size: 1.2em;
   font-family: 'Poppins', sans-serif;
-}
-
-footer #footernav {
-  color: #4e9ba3;
-  text-decoration: none;
-  margin-right: 30px;
-  margin-left: 30px;
-  font-size: 1.4em;
-  font-weight: 600;
-  font-family: 'Poppins', sans-serif;
-}
-
-footer #footernav:hover, footer #footernav:focus {
-  text-decoration: none;
-  color: #73d0da;
 }
 /** ===================================== **/
 /** ========== /Footer section ========== **/
