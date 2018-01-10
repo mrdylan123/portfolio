@@ -325,15 +325,11 @@ section.about {
 
 .aboutme {
   position: relative;
-  padding: 3% 10% 0% 10%;
+  padding: 0% 10% 0% 10%;
   height: 100%;
   /*height: 400px;*/
   /* Compensate for small screens not seeing all text */
   /*overflow-y: scroll;*/
-}
-
-.aboutme h1 {
-  font-size: 30px;
 }
 
 .aboutme h1,p,li {
@@ -368,14 +364,12 @@ section.work {
 
 .mywork {
   position: relative;
-  padding: 2% 10% 4% 10%;
 }
 
 .mywork h1 {
   text-align: center;
   color: #24374b;
   font-family: 'Nunito';
-  margin-top: 0;
 }
 
 .subtext {
