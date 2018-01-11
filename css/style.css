@@ -517,6 +517,10 @@ section.contact {
   background-color: #3f6184;
 }
 
+.contactcontainer {
+  width: 100%;
+}
+
 .contact h1,p{
   font-family: 'Nunito', sans-serif;
   color: #fff;
