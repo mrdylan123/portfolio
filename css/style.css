@@ -11,11 +11,11 @@ html, body, .homecontainer {
   /* Prevent horizontal overflow (horizontal scrollbar will appear otherwise) */
   /*overflow-x: hidden;*/
 }
-
+/*
 .row {
   margin-right: 0;
   margin-left: 0;
-}
+}*/
 
 /* Smoother hover links */
 a, button {
@@ -381,11 +381,6 @@ section.about {
 /** ==================================== **/
 section.work {
   margin-bottom: 60px;
-}
-
-.workrow {
-  margin-right: 0;
-  margin-left: 0;
 }
 
 .mywork {
