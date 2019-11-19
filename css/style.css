@@ -2,23 +2,23 @@
 /** ========== Basics section ========== **/
 /** ==================================== **/
 * {
-  font-family: 'Poppins', sans-serif, bold;
+  font-family: "Poppins", sans-serif, bold;
+  margin: 0;
+  padding: 0;
 }
 
-html, body, .homecontainer {
+html,
+body,
+.homecontainer {
   width: 100%;
   height: 100%;
   /* Prevent horizontal overflow (horizontal scrollbar will appear otherwise) */
   /*overflow-x: hidden;*/
 }
-/*
-.row {
-  margin-right: 0;
-  margin-left: 0;
-}*/
 
 /* Smoother hover links */
-a, button {
+a,
+button {
   /* For other browsers */
   -o-transition: 1s;
   -ms-transition: 1s;
@@ -28,15 +28,17 @@ a, button {
   transition: 1s;
 }
 
-.nopadding {
-  margin: 0 15px !important;
-  padding: 0 !important;
-}
-
 /* This only works with JavaScript, 
 if it's not present, don't show loader */
-.no-js #loader { display: none;  }
-.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.no-js #loader {
+  display: none;
+}
+.js #loader {
+  display: block;
+  position: absolute;
+  left: 100px;
+  top: 0;
+}
 .loadingdiv {
   position: fixed;
   left: 0px;
@@ -44,17 +46,16 @@ if it's not present, don't show loader */
   width: 100%;
   height: 100%;
   z-index: 9999;
-  background: url('../img/preloader.gif') center no-repeat #fff;
+  background: url("../img/preloader.gif") center no-repeat #fff;
+}
+
+.nopadding {
+  padding: 0;
 }
 
 /** ===================================== **/
 /** ========== /Basics section ========== **/
 /** ===================================== **/
-
-
-
-
-
 
 /** ================================== **/
 /** ========== Home section ========== **/
@@ -70,7 +71,7 @@ header {
   /*height: 100%;*/
   height: 100vh;
   position: center;
-  background-image: url('../img/introbg1test.jpg'); /* introbg1.gif for better quality but longer loadtime */
+  background-image: url("../img/introbg1test.jpg"); /* introbg1.gif for better quality but longer loadtime */
   background-repeat: no-repeat;
   background-position: center center;
   /* background-attachment: fixed; removed for Android */
@@ -86,7 +87,7 @@ header {
 }
 
 .home h1 {
-  font-family: 'Lemonada', cursive, bold;
+  font-family: "Lemonada", cursive, bold;
   color: #fff;
   position: relative;
   top: 50%;
@@ -97,8 +98,8 @@ header {
   margin-top: 0;
   margin-bottom: 5px;
   padding-bottom: 10px;
-  text-shadow: 1px 1px 1px rgba(0,0,0, 0.5); 
-/*  background: linear-gradient(#fff,#ededed) no-repeat;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  /*  background: linear-gradient(#fff,#ededed) no-repeat;
   background-size: 50% 0.03em;
   background-position: center bottom;*/
 }
@@ -128,68 +129,31 @@ smaller than 650
 /************************************************************************************
 smaller than 560
 *************************************************************************************/
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) and {
   .home h1 {
-    font-size: 60px;
+    font-size: 65px;
   }
-}
+} */
 
 #parenthome {
   position: relative;
 }
 
 #home-text {
-/*  position: relative;*/
-  top: 50%; left: 50%;
-  transform: translate(-50%,-50%);
-/*  padding-top: 10%;*/
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*  padding-top: 10%;*/
   height: 100%;
   /*word-wrap:break-word;*/
-/*  padding-top: 175px;
-  padding-bottom: 200px;*/
-/*  display: inline-block;*/
+  /*  display: inline-block;*/
   max-width: 100%;
-/*  margin: 0 auto;*/
-/*  animation: fadein 2.5s;
-    -moz-animation: fadein 2.5s; /* Firefox */
-    /*-webkit-animation: fadein 2.5s;*/ /* Safari and Chrome */
-    /*-o-animation: fadein 2.5s;*/ /* Opera */
+  /*  margin: 0 auto;*/
 }
-
-/** ===== Home text fade in support ===== **/
-/*@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Firefox < 16 */
-/*@-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}*/
-
-/* Safari, Chrome and Opera > 12.1 */
-/*@-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}*/
-
-/* Internet Explorer */
-/*@-ms-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}*/
-
-/* Opera < 12.1 */
-/*@-o-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}*/
-/** ===== End Home text fade in support ===== **/
 
 .home p {
   color: #fff;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   /*display: inline;*/
   text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
   position: relative;
@@ -199,7 +163,6 @@ smaller than 560
   transform: translateY(-50%);
   font-weight: 500;
   margin-top: 5px;
-  /*margin-bottom: 40px;*/
 }
 
 /* Start resizing home text on smaller screens */
@@ -240,13 +203,11 @@ smaller than 560
 #scrolldownarrow {
   width: 45px;
   height: 45px;
-  position:absolute;
+  position: absolute;
   left: 0;
   right: 0;
   margin: 0 auto;
   bottom: 5%;
-/*  margin-bottom: 5px;
-*/
 }
 
 /************************************************************************************
@@ -259,14 +220,9 @@ smaller than 650 arrow
   }
 }
 
-
 /** =================================== **/
 /** ========== /Home section ========== **/
 /** =================================== **/
-
-
-
-
 
 /** ================================= **/
 /** ========== Nav section ========== **/
@@ -277,34 +233,40 @@ section.nav {
 }
 
 .btn-nav {
-  white-space: normal !important;
+  white-space: normal;
   word-wrap: break-word;
   margin: 0 auto;
+  display: inline-block;
+  /* padding: 18px 46px; */
+  border: 2px solid #4e9ba3;
+  border-radius: 3px;
+  color: #4e9ba3;
+  font-size: 18px;
+  background-color: transparent;
 }
 
-.btn-nav {
-    display: inline-block;
-    padding: 7% 20%;
-    border: 2px solid #4e9ba3;
-    border-radius: 3px;
-    color: #4e9ba3;
-    font-size: 18px;
-    background-color: transparent;
+@media screen and (min-width: 980px) {
+  .btn-nav {
+    padding: 18px 46px;
+  }
 }
 
-.btn-nav:hover, .btn-nav:focus {
-    border-color: #73d0da;
-    color: #73d0da;
-    text-decoration: none;
-    background-color: transparent;
+.navcol {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.btn-nav:hover,
+.btn-nav:focus {
+  border-color: #73d0da;
+  color: #73d0da;
+  text-decoration: none;
+  background-color: transparent;
 }
 /** ================================== **/
 /** ========== /Nav section ========== **/
 /** ================================== **/
-
-
-
-
 
 /** ==================================== **/
 /** ========== About me section ========== **/
@@ -315,23 +277,24 @@ section.about {
 
 .aboutme-bg {
   position: relative;
-  background: url('../img/aboutmebg.gif');
-  background-repeat: no-repeat; 
+  background: url("../img/aboutmebg.gif");
+  background-repeat: no-repeat;
   background-position: center center;
+  width: 100%;
   /* background-attachment: fixed; removed for Android */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   /*background-size: 100%;*/
-  height: 100% !important;
+  height: 100%;
 }
 
 .aboutme-img {
-    min-width: 100%;
-    height: 100%;
-    text-align: center;
-    line-height: 400px;
+  min-width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 400px;
 }
 
 #personimg {
@@ -348,13 +311,15 @@ section.about {
   /*overflow-y: scroll;*/
 }
 
-.aboutme h1,p,li {
+.aboutme h1,
+p,
+li {
   color: #fff;
-  font-family: 'Nunito';
+  font-family: "Nunito";
 }
 
 .aboutme a {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   color: #73d0da;
   text-decoration: none;
 }
@@ -371,11 +336,6 @@ section.about {
 /** ========== /About me section ========== **/
 /** ====================================== **/
 
-
-
-
-
-
 /** ====================================== **/
 /** ========== Work section ============= **/
 /** ==================================== **/
@@ -390,7 +350,7 @@ section.work {
 .work h1 {
   text-align: center;
   color: #24374b;
-  font-family: 'Nunito';
+  font-family: "Nunito";
 }
 
 .subtext {
@@ -401,7 +361,6 @@ section.work {
 .projecttile {
   margin: 20px 0 20px 0;
 }
-
 
 .projectbox {
   position: relative;
@@ -426,7 +385,7 @@ section.work {
   background: rgba(63, 97, 132, 0.9);
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
-  transition: all 0.5s ease; 
+  transition: all 0.5s ease;
 }
 
 .projectbox .project-caption .project-caption-content {
@@ -437,9 +396,10 @@ section.work {
   text-align: center;
 }
 
-.projectbox .project-caption .project-caption-content .project-text-muted, .projectbox .project-caption .project-caption-content .project-name {
+.projectbox .project-caption .project-caption-content .project-text-muted,
+.projectbox .project-caption .project-caption-content .project-name {
   padding: 0 15px;
-  font-family: 'Poppins', Arial, sans-serif;
+  font-family: "Poppins", Arial, sans-serif;
 }
 
 .projectbox .project-caption .project-caption-content .project-text-muted {
@@ -464,17 +424,19 @@ section.work {
   border: 0;
 }
 
-.projectbox:hover .project-caption, .projectbox .project-mobile {
-  opacity: 1; 
+.projectbox:hover .project-caption,
+.projectbox .project-mobile {
+  opacity: 1;
 }
 
-.projectbox:hover .project-caption .project-caption-content .project-name hr, .projectbox .project-mobile .project-caption-content .project-name hr {
+.projectbox:hover .project-caption .project-caption-content .project-name hr,
+.projectbox .project-mobile .project-caption-content .project-name hr {
   width: 100%;
   height: 5px;
 }
 
 .projectbox:focus {
-  outline: none; 
+  outline: none;
 }
 
 .project-link {
@@ -486,7 +448,12 @@ section.work {
   transition: all 1s ease;
 }
 
-.project-link:hover, .projectbox .project-mobile .project-caption-content .project-icons .project-link {
+.project-link:hover,
+.projectbox
+  .project-mobile
+  .project-caption-content
+  .project-icons
+  .project-link {
   color: #77b9ff;
 }
 
@@ -498,17 +465,16 @@ section.work {
 /* Resize text on bigger screens */
 @media (min-width: 768px) {
   .projectbox .project-caption .project-caption-content .project-text-muted {
-    font-size: 16px; }
+    font-size: 16px;
+  }
   .projectbox .project-caption .project-caption-content .project-name {
-    font-size: 22px; } 
+    font-size: 22px;
+  }
 }
 
 /** ==================================== **/
 /** ========== /Work section ========== **/
 /** ================================== **/
-
-
-
 
 /** ====================================== **/
 /** ========== Contact section ========== **/
@@ -521,8 +487,9 @@ section.contact {
   width: 100%;
 }
 
-.contact h1,p{
-  font-family: 'Nunito', sans-serif;
+.contact h1,
+p {
+  font-family: "Nunito", sans-serif;
   color: #fff;
 }
 
@@ -568,47 +535,68 @@ section.contact {
 }
 
 .connectlist a {
-    display: inline-block;
-    float: left;
-    width: 35px;
-    height: 35px;
-    font-size: 20px;
-    color: #fff;
-    text-decoration: none;
-    cursor: pointer;
-    text-align: center;
-    line-height: 35px;
-    background: #000;
-    position: relative;
-    transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
+  display: inline-block;
+  /*float: left;*/
+  width: 35px;
+  height: 35px;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  line-height: 35px;
+  background: #000;
+  position: relative;
+  transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
 }
 
 .connectlist a {
-    overflow: hidden;
-    font-size: 20px;
-    border-radius: 4px;
+  overflow: hidden;
+  font-size: 20px;
+  border-radius: 4px;
 }
 .connectlist a:hover {
-    background: #fff;
-    text-shadow: 0px 0px #d4d4d4, 1px 1px #d4d4d4, 2px 2px #d4d4d4, 3px 3px #d4d4d4, 4px 4px #d4d4d4, 5px 5px #d4d4d4, 6px 6px #d4d4d4, 7px 7px #d4d4d4, 8px 8px #d4d4d4, 9px 9px #d4d4d4, 10px 10px #d4d4d4, 11px 11px #d4d4d4, 12px 12px #d4d4d4, 13px 13px #d4d4d4, 14px 14px #d4d4d4, 15px 15px #d4d4d4, 16px 16px #d4d4d4, 17px 17px #d4d4d4, 18px 18px #d4d4d4, 19px 19px #d4d4d4, 20px 20px #d4d4d4, 21px 21px #d4d4d4, 22px 22px #d4d4d4, 23px 23px #d4d4d4, 24px 24px #d4d4d4, 25px 25px #d4d4d4, 26px 26px #d4d4d4, 27px 27px #d4d4d4, 28px 28px #d4d4d4, 29px 29px #d4d4d4, 30px 30px #d4d4d4;
+  background: #fff;
+  text-shadow: 0px 0px #d4d4d4, 1px 1px #d4d4d4, 2px 2px #d4d4d4,
+    3px 3px #d4d4d4, 4px 4px #d4d4d4, 5px 5px #d4d4d4, 6px 6px #d4d4d4,
+    7px 7px #d4d4d4, 8px 8px #d4d4d4, 9px 9px #d4d4d4, 10px 10px #d4d4d4,
+    11px 11px #d4d4d4, 12px 12px #d4d4d4, 13px 13px #d4d4d4, 14px 14px #d4d4d4,
+    15px 15px #d4d4d4, 16px 16px #d4d4d4, 17px 17px #d4d4d4, 18px 18px #d4d4d4,
+    19px 19px #d4d4d4, 20px 20px #d4d4d4, 21px 21px #d4d4d4, 22px 22px #d4d4d4,
+    23px 23px #d4d4d4, 24px 24px #d4d4d4, 25px 25px #d4d4d4, 26px 26px #d4d4d4,
+    27px 27px #d4d4d4, 28px 28px #d4d4d4, 29px 29px #d4d4d4, 30px 30px #d4d4d4;
 }
 
 .connectlist .google {
-    background: #DD4A3A;
-    text-shadow: 0px 0px #c23122, 1px 1px #c23122, 2px 2px #c23122, 3px 3px #c23122, 4px 4px #c23122, 5px 5px #c23122, 6px 6px #c23122, 7px 7px #c23122, 8px 8px #c23122, 9px 9px #c23122, 10px 10px #c23122, 11px 11px #c23122, 12px 12px #c23122, 13px 13px #c23122, 14px 14px #c23122, 15px 15px #c23122, 16px 16px #c23122, 17px 17px #c23122, 18px 18px #c23122, 19px 19px #c23122, 20px 20px #c23122, 21px 21px #c23122, 22px 22px #c23122, 23px 23px #c23122, 24px 24px #c23122, 25px 25px #c23122, 26px 26px #c23122, 27px 27px #c23122, 28px 28px #c23122, 29px 29px #c23122, 30px 30px #c23122;
+  background: #dd4a3a;
+  text-shadow: 0px 0px #c23122, 1px 1px #c23122, 2px 2px #c23122,
+    3px 3px #c23122, 4px 4px #c23122, 5px 5px #c23122, 6px 6px #c23122,
+    7px 7px #c23122, 8px 8px #c23122, 9px 9px #c23122, 10px 10px #c23122,
+    11px 11px #c23122, 12px 12px #c23122, 13px 13px #c23122, 14px 14px #c23122,
+    15px 15px #c23122, 16px 16px #c23122, 17px 17px #c23122, 18px 18px #c23122,
+    19px 19px #c23122, 20px 20px #c23122, 21px 21px #c23122, 22px 22px #c23122,
+    23px 23px #c23122, 24px 24px #c23122, 25px 25px #c23122, 26px 26px #c23122,
+    27px 27px #c23122, 28px 28px #c23122, 29px 29px #c23122, 30px 30px #c23122;
 }
 .connectlist .google:hover {
-    color: #DD4A3A;
+  color: #dd4a3a;
 }
 .connectlist .linkedin {
-    background: #007BB6;
-    text-shadow: 0px 0px #005983, 1px 1px #005983, 2px 2px #005983, 3px 3px #005983, 4px 4px #005983, 5px 5px #005983, 6px 6px #005983, 7px 7px #005983, 8px 8px #005983, 9px 9px #005983, 10px 10px #005983, 11px 11px #005983, 12px 12px #005983, 13px 13px #005983, 14px 14px #005983, 15px 15px #005983, 16px 16px #005983, 17px 17px #005983, 18px 18px #005983, 19px 19px #005983, 20px 20px #005983, 21px 21px #005983, 22px 22px #005983, 23px 23px #005983, 24px 24px #005983, 25px 25px #005983, 26px 26px #005983, 27px 27px #005983, 28px 28px #005983, 29px 29px #005983, 30px 30px #005983;
+  background: #007bb6;
+  text-shadow: 0px 0px #005983, 1px 1px #005983, 2px 2px #005983,
+    3px 3px #005983, 4px 4px #005983, 5px 5px #005983, 6px 6px #005983,
+    7px 7px #005983, 8px 8px #005983, 9px 9px #005983, 10px 10px #005983,
+    11px 11px #005983, 12px 12px #005983, 13px 13px #005983, 14px 14px #005983,
+    15px 15px #005983, 16px 16px #005983, 17px 17px #005983, 18px 18px #005983,
+    19px 19px #005983, 20px 20px #005983, 21px 21px #005983, 22px 22px #005983,
+    23px 23px #005983, 24px 24px #005983, 25px 25px #005983, 26px 26px #005983,
+    27px 27px #005983, 28px 28px #005983, 29px 29px #005983, 30px 30px #005983;
 }
 .connectlist .linkedin:hover {
-    color: #007BB6;
+  color: #007bb6;
 }
 
 form.contact {
@@ -623,16 +611,17 @@ form.contact {
   margin-bottom: 30px;
 }
 
-form input, form textarea {
+form input,
+form textarea {
   font-size: 13px;
   padding: 10px 10px 10px 5px;
   display: block;
   width: 300px;
   border: none;
   outline: none;
-  border-bottom: 1px solid #B1B1B1;
-  color: #B1B1B1;
-  background: rgba(0,0,0,0);
+  border-bottom: 1px solid #b1b1b1;
+  color: #b1b1b1;
+  background: rgba(0, 0, 0, 0);
   opacity: 0.5;
   transition: 0.2s ease;
 }
@@ -642,13 +631,14 @@ form input {
   color: #fff;
 }
 
-form input:focus, form textarea:focus {
+form input:focus,
+form textarea:focus {
   outline: none;
   opacity: 1;
 }
 
 .inputlabel {
-  color: #B1B1B1; 
+  color: #b1b1b1;
   font-size: 12px;
   font-weight: normal;
   position: absolute;
@@ -656,61 +646,80 @@ form input:focus, form textarea:focus {
   left: 5px;
   top: 6px;
   opacity: 0.5;
-  transition: 0.2s ease all; 
-  -moz-transition: 0.2s ease all; 
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
   -webkit-transition: 0.2s ease all;
 }
 
 /* active state */
-input:focus ~ .inputlabel, input:valid ~ .inputlabel, textarea:focus ~ .inputlabel, textarea:valid ~ .inputlabel {
+input:focus ~ .inputlabel,
+input:valid ~ .inputlabel,
+textarea:focus ~ .inputlabel,
+textarea:valid ~ .inputlabel {
   top: -14px;
   font-size: 11px;
-  color: #B1B1B1;
+  color: #b1b1b1;
   opacity: 1;
 }
 
 .highlight {
   position: absolute;
-  height: 60%; 
-  width: 100px; 
-  top: 25%; 
+  height: 60%;
+  width: 100px;
+  top: 25%;
   left: 0;
   pointer-events: none;
   opacity: 0.5;
 }
 
 /* active state */
-form input:focus ~ .highlight, form textarea:focus ~ .highlight {
-  -webkit-animation:inputHighlighter 0.3s ease;
-  -moz-animation:inputHighlighter 0.3s ease;
-  animation:inputHighlighter 0.3s ease;
+form input:focus ~ .highlight,
+form textarea:focus ~ .highlight {
+  -webkit-animation: inputHighlighter 0.3s ease;
+  -moz-animation: inputHighlighter 0.3s ease;
+  animation: inputHighlighter 0.3s ease;
 }
 
 /* ANIMATIONS ================ */
 @-webkit-keyframes inputHighlighter {
-  from { background:#B1B1B1; }
-  to  { width:0; background:transparent; }
+  from {
+    background: #b1b1b1;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
 }
 @-moz-keyframes inputHighlighter {
-  from { background:#B1B1B1; }
-  to  { width:0; background:transparent; }
+  from {
+    background: #b1b1b1;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
 }
 @keyframes inputHighlighter {
-  from { background:#B1B1B1; }
-  to  { width:0; background:transparent; }
+  from {
+    background: #b1b1b1;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
 }
 
 .contactbutton {
   padding: 10px;
   background-color: transparent;
-  color: #FAFAFA;
+  color: #fafafa;
   border-radius: 4px;
-  border: 1px solid #B1B1B1;
+  border: 1px solid #b1b1b1;
   font-size: 13px;
 }
 
 .contactbutton:hover {
-  color: #007BB6;
+  color: #007bb6;
   background-color: #fff;
   border-color: #fff;
 }
@@ -724,34 +733,31 @@ form input:focus ~ .highlight, form textarea:focus ~ .highlight {
 /** ========== /Contact section ========== **/
 /** ===================================== **/
 
-
-
-
 /** ==================================== **/
 /** ========== Footer section ========== **/
 /** ==================================== **/
 footer {
   background-color: #f6f7f9;
-    padding: 0;
-    margin: 0;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    align-items: center;
-    justify-content: center;  
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #footerrow {
-    width: 100%;
+  width: 100%;
 }
 
 .flex-item {
-    padding: 5px;
-    margin: 15px;
-    line-height: 20px;
-    text-align: center;
+  padding: 5px;
+  margin: 15px;
+  line-height: 20px;
+  text-align: center;
 }
 
 .flex-item1 {
@@ -766,13 +772,11 @@ footer {
 .flex-item > p {
   color: #333;
   font-size: 1.2em;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 /** ===================================== **/
 /** ========== /Footer section ========== **/
 /** ===================================== **/
-
-
 
 /** ========================================= **/
 /** ========== Back to top button ========== **/
@@ -782,15 +786,17 @@ footer {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  display:none;
+  display: none;
   border-radius: 99px;
   background-color: rgba(63, 97, 132, 0.9);
   color: #fff;
-	padding: 6px 12px;
+  padding: 6px 12px;
 }
 
-.back-to-top:hover, .back-to-top:focus {
-  color: #fff;
+.back-to-top:hover,
+.back-to-top:focus {
+  color: rgba(63, 97, 132, 0.9);
+  background-color: #fff;
 }
 /** ========================================== **/
 /** ========== /Back to top button ========== **/

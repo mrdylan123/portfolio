@@ -13,7 +13,7 @@
 	<!-- Bootstrap, FontAwesome, other CSS Stylesheets -->
 	<link rel="stylesheet" href="css/bootstrap.css" />
 	<link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+	<!--<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">-->
 
 	<!-- Import fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
@@ -51,17 +51,17 @@
 	<!-- Navigation section -->
 	<section id="nav" class="nav">
 		<div class="container">
-			<div class="row" style="width: 100%; text-align: center;">
-				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-					<a class="js-scroll-trigger btn btn-lg btn-nav" href="#about">About</a>
+			<div class="row" style="text-align: center;">
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 navcol">
+					<a class="js-scroll-trigger btn btn-nav" href="#about">About</a>
 				</div>
 
-				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-					<a class="js-scroll-trigger btn btn-lg btn-nav" href="#work">Portfolio</a>
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 navcol">
+					<a class="js-scroll-trigger btn btn-nav" href="#work">Portfolio</a>
 				</div>
 
-				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-					<a class="js-scroll-trigger btn btn-lg btn-nav" href="#contact">Contact</a>
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 navcol">
+					<a class="js-scroll-trigger btn btn-nav" href="#contact">Contact</a>
 				</div>
 			</div>
 		</div>	
@@ -72,9 +72,11 @@
 	<section id="about" class="about">
 		<div class="container-fluid aboutmecontainer">
 			<div class="row">
-				<div class="col-md-6 hidden-xs col-sm-6 col-lg-6 aboutme-bg" id="aboutmebg">
-					<div class="aboutme-img">
-						<img src="img/Dylan.png" alt="About Me Icon" id="personimg"/>
+				<div class="col-md-6 col-xs-12 col-sm-6 col-lg-6 nopadding">
+					<div class="aboutme-bg" id="aboutmebg">
+						<div class="aboutme-img">
+							<img src="img/Dylan.png" alt="About Me Icon" id="personimg"/>
+						</div>
 					</div>
 				</div>
 
@@ -114,7 +116,7 @@
 		<div class="row">
 			<div class="col-lg-4 col-md-6 projecttile" id="tile1">
 				<div class="projectbox">
-					<img class="img-responsive projectimg" src="img/project_ptwebsite/index.png" alt="Personal training website">
+					<img class="img-responsive projectimg" src="img/project_ptwebsite/index.png" alt="Personal training website" />
 					<div class="project-caption" id="caption1">
 						<div class="project-caption-content">
 							<div class="project-text-muted">
@@ -148,7 +150,7 @@
 				
 			<div class="col-lg-4 col-md-6 projecttile" id="tile2">
 				<div class="projectbox">
-					<img class="img-responsive projectimg" src="img/project_cinema/index1.PNG" alt="Cinema website">
+					<img class="img-responsive projectimg" src="img/project_cinema/index1.PNG" alt="Cinema website" />
 					<div class="project-caption" id="caption2">
 						<div class="project-caption-content">
 							<div class="project-text-muted">
@@ -183,7 +185,7 @@
 				
 			<div class="col-lg-4 col-md-6 projecttile" id="tile3">
 				<div class="projectbox">
-					<img class="img-responsive projectimg" src="img/project_android/details.jpg" alt="Android Digital ID's app">
+					<img class="img-responsive projectimg" src="img/project_android/details.jpg" alt="Android Digital ID's app" />
 					<div class="project-caption" id="caption3">
 						<div class="project-caption-content">
 							<div class="project-text-muted">
@@ -329,9 +331,9 @@
    	<script src="js/modals.js"></script>
    	<script src="js/loader.js"></script>
    	<script src="js/projectspagemobile.js"></script>
- 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPJVhxVi3K7tJFVi7J9w78TXYYQsClKvc&callback=initMap"
+	  <script src="js/googlemap.js"></script>
+	  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPJVhxVi3K7tJFVi7J9w78TXYYQsClKvc&callback=initMap"
   	type="text/javascript"></script>
-  	<script src="js/googlemap.js"></script>
 
 </body>
 </html>
